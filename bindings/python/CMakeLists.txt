@@ -46,7 +46,7 @@ STRING(REGEX REPLACE "\".*"     "" DEB_DISTRO "${DEB_DISTRO}")
 
 if( DEB_DISTRO STREQUAL "Debian" OR DEB_DISTRO STREQUAL "Ubuntu" )
   set(PYTHON_LAYOUT  "unix" CACHE STRING "Python installation layout (deb or unix)")
-  set(DEB_INSTALL_ARGS "--install-layout ${PYTHON_LAYOUT}")
+  #set(DEB_INSTALL_ARGS "--install-layout ${PYTHON_LAYOUT}")
 endif()
 
 install(
